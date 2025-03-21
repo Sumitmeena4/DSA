@@ -4,6 +4,7 @@ public class Bitmanipulation{
         // getithbit(7, 2);
         // evenorodd(7);
         // System.out.println(setithbit(13, 1));
+        System.out.println(clearithbit(15, 3));
     }
     
     public static void evenorodd(int n){
@@ -24,5 +25,9 @@ public class Bitmanipulation{
     public static int setithbit(int n, int i){
         int bit = 1<<i;
         return n|bit;
+    }
+    public static int clearithbit(int n, int i){
+        int bit = ~(1<<i);
+        return n & bit;
     }
 }
