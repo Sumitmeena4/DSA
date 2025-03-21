@@ -1,8 +1,9 @@
 
 public class Bitmanipulation{
     public static void main(String[] args) {
-        getithbit(7, 2);
-        evenorodd(7);
+        // getithbit(7, 2);
+        // evenorodd(7);
+        // System.out.println(setithbit(13, 1));
     }
     
     public static void evenorodd(int n){
@@ -20,5 +21,8 @@ public class Bitmanipulation{
             System.out.println("ith bit is 1");
         }
     }
-
+    public static int setithbit(int n, int i){
+        int bit = 1<<i;
+        return n|bit;
+    }
 }
